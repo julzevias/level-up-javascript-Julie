@@ -7,4 +7,3 @@ function coffeeDate(coffeeArr) {
 }
 
 console.log(coffeeDate([2, 5, 7, 1, 4]));
-console.log('hi');
