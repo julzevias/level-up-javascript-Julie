@@ -51,3 +51,40 @@ console.log("time: 3:00, wait: 00:00 \t" + scheduleStops2(testarr1, "3:00"));
 console.log("time: 4:00, wait: 00:59 \t" + scheduleStops2(testarr1, "4:00"));
 console.log("time: 5:00, wait: 00:00 \t" + scheduleStops2(testarr1, "5:00"));
 console.log("time: 23:59, wait: -1 \t" + scheduleStops2(testarr1, "23:59"));
+
+
+// matthew's solution
+
+// function stringTimeToMinutes(stringTime)
+// {
+//   parseInt(strinngTime[0]) * 60 + parseInt(strTime[1]);
+// }
+
+// function numMinToStringTime(numMin)
+// {
+//   sec = "" + numMin % 60
+//   min = "" + ((numMin - sec) / 60)
+//   while (sec.length < 2) sec = "0" + sec;
+//   while (min.length < 2) min = "0" + min;
+//   return min + ":" + sec;
+// }
+
+// function buswait (times, arrivalTime)
+// { 
+//   arrivalTimeSec = strTimeToMin(arrivalTime);
+//   urBus = -1;
+//   for (i = 0; i < times.length; i++)
+//   {
+//     busTimeSec = strTimeToMin(times[i]);
+//     if (busTimeSec >= arrivalTime)
+//     {
+//       urBus = i;
+//       break;
+//     }
+//   }
+//   if (urBus == -1)
+//   return "u missed all the busses dummy"
+//   waitTime = numMinToStringTime(strTimeToMin(times[i] - arrivalTimeSec)
+  
+//   return "u want the bus at "  + times[i] + " and u wll wait " + waitTime;
+// }
